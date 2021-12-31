@@ -1,0 +1,67 @@
+/*
+ * Component: RadioGroup
+ * ---------------------
+ */
+
+.cb-form {
+  &.form-horizontal {
+    .cb-radio-group {
+      .cb-radio {
+        &.radio {
+          padding-top: 4px;
+        }
+
+        &.radio-inline {
+          margin-right: 15px;
+          padding-top: 4px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.form-inline {
+    .cb-radio-group {
+      display: inline-block;
+
+      .cb-radio {
+        margin-bottom: 0;
+
+        &.radio + .cb-radio.radio {
+          margin-top: 0;
+        }
+
+        label {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.cb-radio-group {
+  .cb-radio {
+    &.radio {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.radio + .cb-radio.radio {
+      margin-top: -5px;
+    }
+
+    &.radio-inline {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

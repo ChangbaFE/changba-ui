@@ -1,0 +1,39 @@
+/*
+ * Component: Pagination
+ * ---------------------
+ */
+
+.cb-pagination {
+  .pagination {
+    .pagination-control {
+      width: 70px;
+      padding-top: 1px;
+      padding-right: 0;
+      padding-bottom: 1px;
+      padding-left: 0;
+
+      &:focus,
+      &:hover {
+        background-color: #fff;
+      }
+
+      .form-control {
+        border: 0;
+      }
+    }
+
+    .pagination-control-enter-active,
+    .pagination-control-leave-active {
+      transition: width .1s;
+    }
+
+    .pagination-control-enter,
+    .pagination-control-leave-to {
+      width: 0;
+    }
+  }
+
+  .cb-icon {
+    pointer-events: none;
+  }
+}

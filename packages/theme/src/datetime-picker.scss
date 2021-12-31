@@ -1,0 +1,38 @@
+/*
+ * Component: DatetimePicker
+ * -------------------------
+ */
+
+@import "variables";
+
+.daterangepicker {
+  .calendar-table {
+    td {
+      border: 0;
+
+      &.today {
+        position: relative;
+
+        &.off.active:before {
+          border-bottom-color: $light-blue;
+        }
+
+        &.active:before {
+          border-bottom-color: #fff;
+        }
+
+        &:before {
+          position: absolute;
+          right: 4px;
+          bottom: 4px;
+          display: inline-block;
+          border: solid transparent;
+          border-width: 0 0 7px 7px;
+          border-top-color: rgba(0, 0, 0, 0.2);
+          border-bottom-color: $light-blue;
+          content: '';
+        }
+      }
+    }
+  }
+}

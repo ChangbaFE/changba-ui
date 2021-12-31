@@ -1,0 +1,78 @@
+{
+  "name": "changba-ui",
+  "version": "1.3.7",
+  "description": "A Component Library for Vue.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ChangbaFE/changba-ui.git"
+  },
+  "homepage": "https://changbafe.github.io/changba-ui/index.html",
+  "bugs": {
+    "url": "https://github.com/ChangbaFE/changba-ui/issues"
+  },
+  "keywords": [
+    "changba",
+    "vue",
+    "components"
+  ],
+  "main": "lib/changba-ui.common.js",
+  "style": "lib/theme/index.css",
+  "files": [
+    "lib",
+    "src",
+    "packages",
+    "types"
+  ],
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "rimraf ./lib && node ./build/build.js",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@pnotify/bootstrap3": "^5.2.0",
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/font-awesome4": "^5.2.0",
+    "bootstrap": "^3.4.1",
+    "bootstrap-colorpicker": "^2.5.3",
+    "core-js": "^3.8.3",
+    "daterangepicker": "^3.1.0",
+    "dayjs": "^1.10.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "parsleyjs": "^2.9.2",
+    "qs": "^5.0.0",
+    "select2": "^4.0.13",
+    "vex-js": "^4.1.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~4.0.0",
+    "@vue/cli-plugin-eslint": "~4.0.0",
+    "@vue/cli-plugin-unit-jest": "~4.0.0",
+    "@vue/cli-service": "~4.0.0",
+    "@vue/test-utils": "^1.2.2",
+    "@vue/vue2-jest": "^27.0.0-alpha.3",
+    "babel-jest": "^27.3.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.0.0",
+    "eslint-plugin-vue": "^6.0.0",
+    "imports-loader": "^1.0.0",
+    "jest": "^27.3.1",
+    "less": "^3.0.0",
+    "less-loader": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^8.0.0",
+    "string-replace-loader": "^2.0.0",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

@@ -1,0 +1,67 @@
+/*
+ * Component: CheckboxGroup
+ * ------------------------
+ */
+
+.cb-form {
+  &.form-horizontal {
+    .cb-checkbox-group {
+      .cb-checkbox {
+        &.checkbox {
+          padding-top: 4px;
+        }
+
+        &.checkbox-inline {
+          margin-right: 15px;
+          padding-top: 4px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.form-inline {
+    .cb-checkbox-group {
+      display: inline-block;
+
+      .cb-checkbox {
+        margin-bottom: 0;
+
+        &.checkbox + .cb-checkbox.checkbox {
+          margin-top: 0;
+        }
+
+        label {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.cb-checkbox-group {
+  .cb-checkbox {
+    &.checkbox {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.checkbox + .cb-checkbox.checkbox {
+      margin-top: -5px;
+    }
+
+    &.checkbox-inline {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

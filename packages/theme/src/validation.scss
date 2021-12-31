@@ -1,0 +1,46 @@
+/*
+ * Component: Validation
+ * ---------------------
+ */
+
+@import "variables";
+
+.parsley-errors-list {
+  margin: 2px 20px 3px 0;
+  padding: 0;
+  color: $red;
+  font-style: normal;
+  vertical-align: middle;
+  list-style-type: none;
+  font-size: 0.9em;
+  opacity: 0;
+  transition: all .3s ease-in;
+
+  &.filled {
+    opacity: 1;
+  }
+}
+
+.vex {
+  &.vex-theme-default {
+    .vex-content {
+      .parsley-errors-list li {
+        color: $red;
+      }
+    }
+  }
+}
+
+.cb-validation-error-container {
+  display: block;
+}
+
+.cb-form {
+  &.form-inline {
+    .form-group {
+      .cb-validation-error-container {
+        display: inline-block;
+      }
+    }
+  }
+}

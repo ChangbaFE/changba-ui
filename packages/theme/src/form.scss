@@ -1,0 +1,56 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+
+@import "variables";
+
+.form-group {
+  &.has-error {
+    .cb-select-plus {
+      .select2-container--default {
+        .select2-selection--multiple,
+        .select2-selection--single {
+          border-color: $red;
+        }
+
+        &.select2-container--focus .select2-selection--multiple {
+          border-color: $red !important;
+        }
+      }
+    }
+  }
+
+  &.has-success {
+    .cb-select-plus {
+      .select2-container--default {
+        .select2-selection--multiple,
+        .select2-selection--single {
+          border-color: $green;
+        }
+
+        &.select2-container--focus .select2-selection--multiple {
+          border-color: $green !important;
+        }
+      }
+    }
+  }
+}
+
+.vex {
+  &.vex-theme-default {
+    .vex-content {
+      .help-block {
+        color: #737373;
+      }
+      .form-group {
+        &.has-success .help-block {
+          color: $green;
+        }
+        &.has-error .help-block {
+          color: $red;
+        }
+      }
+    }
+  }
+}

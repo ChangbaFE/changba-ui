@@ -1,0 +1,23 @@
+/*
+ * Component: Table
+ * ----------------
+ */
+
+.cb-table {
+  tr {
+    td {
+      .cb-table-column-image {
+        display: block;
+        width: 100%;
+      }
+
+      p {
+        margin: 0;
+
+        + p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

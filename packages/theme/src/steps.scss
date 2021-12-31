@@ -1,0 +1,106 @@
+/*
+ * Component: Steps
+ * ----------------
+ */
+
+@import "variables";
+
+.cb-steps {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  counter-reset: num;
+
+  .step-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Cerchio*/
+
+  .step-item::before {
+    z-index: 1;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    background: $gray-lte;
+    border-radius: 50%;
+    content: counter(num);
+    counter-increment: num;
+  }
+
+  /* Linea */
+
+  .step-item ~ .step-item::after {
+    position: absolute;
+    top: calc(0.75em - 2px);
+    right: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: $gray-lte;
+    content: '';
+  }
+
+  /* Tutte le righe che vengono dopo l'ultimo completed */
+
+  .step-item.completed ~ .step-item::after {
+    position: absolute;
+    top: calc(0.75em - 2px);
+    right: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: $gray-lte;
+    content: '';
+  }
+
+  .step-item.active::before {
+    color: white;
+    background: $light-blue;
+  }
+
+  .step-item.active::after {
+    color: white;
+    background: $light-blue;
+  }
+
+  .step-item-title {
+    margin-top: 3px;
+    word-break: break-all;
+  }
+
+  /*  updated sample  */
+
+  /*  number and circle  */
+
+  .step-item.completed::before {
+    color: #fff;
+    background: $green;
+  }
+
+  .step-item.completed .step-item-title {
+    /*  text  */
+    color: $green;
+  }
+
+  .step-item.completed + .step-item::after {
+    /*  line after circle  */
+    background: $green;
+  }
+
+  .step-item.completed::after {
+    /*  line before circle  */
+    background: $green;
+  }
+
+  .step-item.active .step-item-title {
+    /*  text  */
+    color: $light-blue;
+  }
+}

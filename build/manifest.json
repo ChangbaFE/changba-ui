@@ -1,0 +1,191 @@
+[
+  {
+    "entry": "src/index.js",
+    "filename": "changba-ui.common.js",
+    "formats": "commonjs"
+  },
+  {
+    "entry": "src/index.js",
+    "filename": "changba-ui.js",
+    "formats": "umd",
+    "libraryName": "ChangbaUI",
+    "libraryExport": "default",
+    "external": false
+  },
+  {
+    "entry": "src/index.js",
+    "filename": "changba-ui.min.js",
+    "formats": "umd-min",
+    "libraryName": "ChangbaUI",
+    "libraryExport": "default",
+    "external": false,
+    "minimize": true
+  },
+  {
+    "entry": "packages/theme/index.js",
+    "filename": "index.js",
+    "dest": "lib/theme",
+    "extractCss": true,
+    "minimize": true
+  },
+  {
+    "entry": "packages/badge/index.js",
+    "filename": "badge.js"
+  },
+  {
+    "entry": "packages/box/index.js",
+    "filename": "box.js"
+  },
+  {
+    "entry": "packages/button/index.js",
+    "filename": "button.js"
+  },
+  {
+    "entry": "packages/callout/index.js",
+    "filename": "callout.js"
+  },
+  {
+    "entry": "packages/checkbox/index.js",
+    "filename": "checkbox.js"
+  },
+  {
+    "entry": "packages/checkbox-group/index.js",
+    "filename": "checkbox-group.js"
+  },
+  {
+    "entry": "packages/col/index.js",
+    "filename": "col.js"
+  },
+  {
+    "entry": "packages/color-picker/index.js",
+    "filename": "color-picker.js"
+  },
+  {
+    "entry": "packages/datetime-picker/index.js",
+    "filename": "datetime-picker.js"
+  },
+  {
+    "entry": "packages/dialog/index.js",
+    "filename": "dialog.js"
+  },
+  {
+    "entry": "packages/focus/index.js",
+    "filename": "focus.js"
+  },
+  {
+    "entry": "packages/form/index.js",
+    "filename": "form.js"
+  },
+  {
+    "entry": "packages/form-group/index.js",
+    "filename": "form-group.js"
+  },
+  {
+    "entry": "packages/icon/index.js",
+    "filename": "icon.js"
+  },
+  {
+    "entry": "packages/info-box/index.js",
+    "filename": "info-box.js"
+  },
+  {
+    "entry": "packages/input/index.js",
+    "filename": "input.js"
+  },
+  {
+    "entry": "packages/input-group/index.js",
+    "filename": "input-group.js"
+  },
+  {
+    "entry": "packages/input-group-addon/index.js",
+    "filename": "input-group-addon.js"
+  },
+  {
+    "entry": "packages/label/index.js",
+    "filename": "label.js"
+  },
+  {
+    "entry": "packages/loading/index.js",
+    "filename": "loading.js"
+  },
+  {
+    "entry": "packages/menu-item/index.js",
+    "filename": "menu-item.js"
+  },
+  {
+    "entry": "packages/message-box/index.js",
+    "filename": "message-box.js"
+  },
+  {
+    "entry": "packages/notify/index.js",
+    "filename": "notify.js"
+  },
+  {
+    "entry": "packages/pagination/index.js",
+    "filename": "pagination.js"
+  },
+  {
+    "entry": "packages/progress/index.js",
+    "filename": "progress.js"
+  },
+  {
+    "entry": "packages/radio/index.js",
+    "filename": "radio.js"
+  },
+  {
+    "entry": "packages/radio-group/index.js",
+    "filename": "radio-group.js"
+  },
+  {
+    "entry": "packages/row/index.js",
+    "filename": "row.js"
+  },
+  {
+    "entry": "packages/select/index.js",
+    "filename": "select.js"
+  },
+  {
+    "entry": "packages/select-plus/index.js",
+    "filename": "select-plus.js"
+  },
+  {
+    "entry": "packages/small-box/index.js",
+    "filename": "small-box.js"
+  },
+  {
+    "entry": "packages/step/index.js",
+    "filename": "step.js"
+  },
+  {
+    "entry": "packages/steps/index.js",
+    "filename": "steps.js"
+  },
+  {
+    "entry": "packages/tab-pane/index.js",
+    "filename": "tab-pane.js"
+  },
+  {
+    "entry": "packages/table/index.js",
+    "filename": "table.js"
+  },
+  {
+    "entry": "packages/table-column/index.js",
+    "filename": "table-column.js"
+  },
+  {
+    "entry": "packages/tabs/index.js",
+    "filename": "tabs.js"
+  },
+  {
+    "entry": "packages/tooltip/index.js",
+    "filename": "tooltip.js"
+  },
+  {
+    "entry": "packages/upload/index.js",
+    "filename": "upload.js"
+  },
+  {
+    "entry": "packages/validation/index.js",
+    "filename": "validation.js"
+  }
+]

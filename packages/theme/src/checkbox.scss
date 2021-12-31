@@ -1,0 +1,111 @@
+/*
+ * Component: Checkbox
+ * -------------------
+ */
+
+@import "variables";
+
+.form-horizontal {
+  .cb-checkbox.checkbox,
+  .cb-checkbox.checkbox-inline {
+    padding-top: 5px;
+  }
+}
+
+.cb-checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &.checkbox-inline,
+  label {
+    padding-left: 0;
+  }
+
+  &.checkbox-inline + &.checkbox-inline {
+    margin-left: 0;
+  }
+
+  &.checkbox + &.checkbox {
+    margin-top: 0;
+  }
+
+  /* Remove default checkbox */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+  }
+
+  [type="checkbox"] + .label-text {
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    padding-left: 22px;
+    color: #333;
+    line-height: 23px;
+  }
+
+  [type="checkbox"] + .label-text:before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 1px;
+    transition: 0.2s;
+    content: '';
+  }
+
+  [type="checkbox"] + .label-text:after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 0;
+    width: 6px;
+    height: 12px;
+    border: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 1px;
+    transform: rotate(40deg);
+    transform-origin: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    transition: 0.2s;
+    content: '';
+  }
+
+  [type="checkbox"]:not(:checked):disabled + .label-text:before {
+    border-color: #eee;
+  }
+
+  [type="checkbox"]:not(:checked) + .label-text:hover:before {
+    border-color: $light-blue;
+  }
+
+  [type="checkbox"]:checked + .label-text:after {
+    border-right-color: $light-blue;
+    border-bottom-color: $light-blue;
+  }
+
+  [type="checkbox"]:checked:disabled + .label-text:before {
+    border-color: #eee;
+  }
+
+  [type="checkbox"]:checked:disabled + .label-text:after {
+    border-right-color: #eee;
+    border-bottom-color: #eee;
+  }
+
+  [type="checkbox"]:not(:checked):disabled + .label-text:hover:before {
+    border-color: #eee;
+  }
+
+  [type="checkbox"]:disabled + .label-text {
+    color: $gray-lte;
+    cursor: not-allowed;
+  }
+}

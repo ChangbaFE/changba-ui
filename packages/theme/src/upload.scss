@@ -1,0 +1,35 @@
+/*
+ * Component: Upload
+ * -----------------
+ */
+
+.cb-upload {
+  display: inline-block;
+
+  .custom-file-upload {
+    display: inline-block;
+  }
+
+  .upload-file {
+    display: none;
+  }
+
+  .upload-filename {
+    margin-left: 5px;
+  }
+
+  .file-preview {
+    display: block;
+    max-width: 100%;
+    margin-top: 5px;
+  }
+
+  .fa-upload,
+  .fa-refresh {
+    margin-right: 5px;
+  }
+
+  .cb-upload-message {
+    display: block;
+  }
+}

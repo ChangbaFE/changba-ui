@@ -1,0 +1,103 @@
+/*
+ * Component: Core
+ * ---------------
+ */
+
+@import "variables";
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, WenQuanYi Micro Hei, Microsoft Yahei, sans-serif !important;
+}
+
+.cb-box {
+  .box-header {
+    .form-inline {
+      line-height: 40px;
+
+      .form-group {
+        margin-right: 10px;
+      }
+
+      select {
+        min-width: 100px;
+      }
+
+      & > .btn {
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+
+.cb-table {
+  tr {
+    td {
+      &[colspan] {
+        text-align: center;
+      }
+    }
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  & > tbody > tr > td,
+  & > thead > tr > th {
+    vertical-align: middle;
+  }
+}
+
+.cb-label {
+  padding-top: 0.3em;
+  font-weight: normal;
+}
+
+.pnotify-container {
+  .pnotify-icon {
+    .fa {
+      top: 3px;
+    }
+  }
+
+  .pnotify-text {
+    word-wrap: break-word;
+  }
+}
+
+.cb-form-group {
+  .has-error {
+    .form-control,
+    .input-group-addon {
+      border-color: $red;
+      box-shadow: none;
+    }
+  }
+
+  .has-success {
+    .form-control,
+    .input-group-addon {
+      border-color: $green;
+      box-shadow: none;
+    }
+  }
+}
+
+.cb-text-break {
+  display: block;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.cb-truncate-ellipsis {
+  display: table;
+  width: 100%;
+  white-space: nowrap;
+  table-layout: fixed;
+
+  & > * {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

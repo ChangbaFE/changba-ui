@@ -1,0 +1,168 @@
+/*
+ * Component: Dialog
+ * -----------------
+ */
+
+.vex.vex-theme-default.vex-theme-panel .vex-overlay {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .65) 100%);
+}
+.vex.vex-theme-default.vex-theme-panel {
+  overflow: visible;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-content {
+  font-family: inherit;
+  background: #fff;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 396px;
+  /*width: 700px;*/
+  padding: 0;
+  margin-bottom: 20px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-wrapper {
+  position: relative;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 0 10px #333;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-wrapper .vex-panel-hd {
+  /*border-bottom: 1px solid #e5e5e5;*/
+  /*padding-top: 4px;*/
+  /*margin-left: 15px;
+    margin-right: 15px;*/
+  background: #045374;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-wrapper .vex-panel-hd h3 {
+  line-height: 43px;
+  font-size: 16px;
+  margin-top: 0;
+  font-weight: normal;
+  color: #aad9ed;
+  padding-left: 16px;
+}
+.vex.vex-theme-default.vex-theme-popup .vex-panel-wrapper .vex-panel-hd h3 {
+  line-height: 33px;
+  font-size: 12px;
+}
+.vex.vex-theme-default.vex-theme-popup.prompt .vex-panel-wrapper .vex-panel-hd {
+  display: none;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-bd {
+  position: relative;
+  min-height: 48px;
+  line-height: 24px;
+  padding: 25px 0;
+  overflow: auto;
+  /*max-height: 100px;*/
+  /*transition: max-height .95s ease;*/
+  box-shadow: inset 0 0 45px rgba(4, 83, 116, 0.2);
+}
+.vex.vex-theme-default.vex-theme-popup .vex-panel-bd {
+  box-shadow: none;
+}
+.vex.vex-theme-default.vex-theme-popup.prompt .vex-panel-bd {
+  padding: 30px 30px 10px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-bd>.content {
+  text-align: center;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-wrapper .vex-panel-ft {
+  background: #d4e0e5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #e8ebed;
+  line-height: 59px;
+  height: 59px;
+  overflow: hidden;
+  text-align: center;
+}
+.vex.vex-theme-default.vex-theme-popup .vex-panel-wrapper .vex-panel-ft {
+  line-height: 52px;
+}
+.vex.vex-theme-default.vex-theme-popup.prompt .vex-panel-wrapper .vex-panel-ft {
+  background: none;
+  border: none;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-wrapper .vex-panel-ft button {
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-right: 10px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-close[disabled],
+.vex.vex-theme-default.vex-theme-panel .vex-close:disabled,
+.vex.vex-theme-default.vex-theme-panel .vex-close[disabled]:before,
+.vex.vex-theme-default.vex-theme-panel .vex-close:disabled:before,
+.vex.vex-theme-default.vex-theme-panel .vex-close[disabled]:hover:before,
+.vex.vex-theme-default.vex-theme-panel .vex-close:disabled:hover:before {
+  cursor: not-allowed;
+  color: #abdaed;
+  opacity: 0.5;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-close:before {
+  color: #000;
+  opacity: .2;
+  background: none;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-close:hover:before {
+  opacity: .5;
+}
+.vex.vex-theme-default.vex-theme-panel .tips {
+  color: #ccc;
+  text-align: left;
+}
+.vex-theme-panel .vex-alert {
+  font-size: 12px;
+  color: #a0a04f;
+  background: #f6f6df;
+  line-height: 28px;
+  margin: 0 24px 20px;
+}
+.vex-theme-panel .vex-alert.muted {
+  color: #444444;
+  background: none;
+}
+.vex-theme-panel .vex-alert.muted strong {
+  color: #3186aa;
+  font-weight: normal;
+}
+.vex.vex-theme-default.vex-theme-panel .modal-body.vex-panel-icon {
+  margin-left: 100px;
+  margin-right: 35px;
+  text-align: left;
+  line-height: 24px;
+  min-height: 48px;
+  position: relative;
+  overflow: visible;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-icon .icon {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -18px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-icon .icon.large {
+  font-size: 72px;
+  left: 32px;
+  margin-top: -36px;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-icon.vex-error .icon {
+  color: #db5c5c;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-icon.vex-success .icon {
+  color: #35b94b;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-panel-icon.vex-warning .icon {
+  color: #d3c700;
+}
+.vex.vex-theme-default.vex-theme-panel .vex-content .ion-help-circled {
+  color: #6aa9cd;
+}
+.vex.vex-theme-default.vex-theme-panel .modal-body {
+  overflow: auto;
+}

@@ -1,0 +1,37 @@
+image: node:14-buster
+
+stages:
+  - build
+  - test
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - $(pwd)/.cache
+
+before_script:
+  - mkdir -p $(pwd)/.cache/npm
+  - npm config set cache=$(pwd)/.cache/npm
+  - npm ci --registry=https://registry.npmmirror.com/
+
+build:
+  tags:
+    - "front-share-143"
+  stage: build
+  script:
+    - npm run build
+
+test:
+  tags:
+    - "front-share-143"
+  stage: test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  dependencies:
+    - build
+  script:
+    - npm run test:unit
+  artifacts:
+    when: always
+    paths:
+      - coverage
+    expire_in: 30 days

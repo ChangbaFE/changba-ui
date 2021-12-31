@@ -1,0 +1,119 @@
+/*
+ * Component: Radio
+ * ----------------
+ */
+
+@import "variables";
+
+.form-horizontal {
+  .cb-radio.radio,
+  .cb-radio.radio-inline {
+    padding-top: 5px;
+  }
+}
+
+.cb-radio {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &.radio-inline,
+  label {
+    padding-left: 0;
+  }
+
+  &.radio-inline + &.radio-inline {
+    margin-left: 0;
+  }
+
+  &.radio + &.radio {
+    margin-top: 0;
+  }
+
+  /**remove default style**/
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+  }
+
+  [type="radio"] + .label-text {
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    padding-left: 22px;
+    color: #333;
+    line-height: 23px;
+    transition: .28s ease;
+  }
+
+  [type="radio"] + .label-text:before,
+  [type="radio"] + .label-text:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    margin-left: 0;
+    border-radius: 50%;
+    transition: .28s ease;
+    content: '';
+  }
+
+  [type="radio"] + .label-text:after {
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Unchecked styles */
+  [type="radio"]:not(:checked) + .label-text:before {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+  }
+
+  [type="radio"]:not(:checked) + .label-text:after {
+    z-index: -1;
+    border: 3px solid #dadada;
+    border-radius: 50%;
+  }
+
+  [type="radio"]:not(:checked) + .label-text:hover:before {
+    border-color: $light-blue;
+  }
+
+  /* Checked styles */
+  [type="radio"]:checked + .label-text:before {
+    border: 1px solid #dadada;
+  }
+
+  [type="radio"]:checked + .label-text:after {
+    z-index: 0;
+    background-color: $light-blue;
+    border: 3px solid #fff;
+  }
+
+  /* Disabled style */
+  [type="radio"]:disabled:not(:checked) + .label-text:before,
+  [type="radio"]:disabled:checked + .label-text:before {
+    background-color: #fff;
+    border-color: #eee;
+  }
+
+  [type="radio"]:disabled + .label-text {
+    color: $gray-lte;
+    cursor: not-allowed;
+  }
+
+  [type="radio"]:disabled:not(:checked) + .label-text:hover:before {
+    border-color: #eee;
+  }
+
+  [type="radio"]:disabled:checked + .label-text:after {
+    background-color: #eee;
+  }
+}
