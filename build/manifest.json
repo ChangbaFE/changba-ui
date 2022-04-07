@@ -45,6 +45,14 @@
     "filename": "callout.js"
   },
   {
+    "entry": "packages/carousel/index.js",
+    "filename": "carousel.js"
+  },
+  {
+    "entry": "packages/carousel-item/index.js",
+    "filename": "carousel-item.js"
+  },
+  {
     "entry": "packages/checkbox/index.js",
     "filename": "checkbox.js"
   },
