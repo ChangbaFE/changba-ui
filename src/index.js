@@ -10,6 +10,8 @@ import Badge from '../packages/badge';
 import Box from '../packages/box';
 import Button from '../packages/button';
 import Callout from '../packages/callout';
+import Carousel from '../packages/carousel';
+import CarouselItem from '../packages/carousel-item';
 import Checkbox from '../packages/checkbox';
 import CheckboxGroup from '../packages/checkbox-group';
 import Col from '../packages/col';
@@ -52,6 +54,8 @@ const components = [
   Box,
   Button,
   Callout,
+  Carousel,
+  CarouselItem,
   Checkbox,
   CheckboxGroup,
   Col,
@@ -121,6 +125,8 @@ export default {
   Box,
   Button,
   Callout,
+  Carousel,
+  CarouselItem,
   Checkbox,
   CheckboxGroup,
   Col,

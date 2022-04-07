@@ -1,6 +1,16 @@
 <template>
   <div class="example">
-    <cb-button theme="primary" @click="handleClick" v-cb-tooltip title="我是个提示">按钮</cb-button>
+
+    <cb-carousel>
+      <cb-carousel-item>
+        <img src="https://res.cdn.changbaimg.com/-/35639bb377ebda0b/logo_new.png" style="width: 100%; height: 200px;" alt="">
+      </cb-carousel-item>
+      <cb-carousel-item>
+        <img src="https://res.cdn.changbaimg.com/-/35639bb377ebda0b/logo_new.png" style="width: 100%;height: 200px;" alt="">
+      </cb-carousel-item>
+    </cb-carousel>
+
+    <cb-button theme="primary" @click="handleClick" v-cb-tooltip title="我是个提示">按钮1</cb-button>
     <cb-button @click="showDialog">显示动态对话框</cb-button>
     <cb-button @click="testVisible = true">显示静态对话框</cb-button>
     <cb-button small @click="showAlert" v-cb-confirm>显示 Alert</cb-button>
