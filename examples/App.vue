@@ -59,7 +59,7 @@
         <cb-datetime-picker v-model="form.date1" use-time use-range required />
       </cb-form-group>
       <cb-form-group label="活动时间2：">
-        <cb-datetime-picker v-model="form.date2" use-time use-range />
+        <cb-datetime-picker v-model="form.date2" use-time use-range max-span="7" />
       </cb-form-group>
       <cb-form-group label="活动性质：">
         <cb-checkbox-group inline v-model="form.data1" required>

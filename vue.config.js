@@ -76,6 +76,7 @@ module.exports = () => ({
           dayjs.extend(require('dayjs/plugin/arraySupport'));
           dayjs.extend(require('dayjs/plugin/badMutable'));
           dayjs.extend(require('dayjs/plugin/updateLocale'));
+          dayjs.extend(require('dayjs/plugin/objectSupport'));
           dayjs.updateLocale('zh-cn', { weekStart: 0 });
         `
       });
