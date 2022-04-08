@@ -32,7 +32,7 @@ export default {
 
   props: {
     interval: {
-      type: [Number, String],
+      type: [Number, String, Boolean],
       default: 5000
     },
 
