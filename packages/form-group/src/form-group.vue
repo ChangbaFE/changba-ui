@@ -2,7 +2,7 @@
   <div class="cb-form-group form-group">
     <label v-if="label !== false" :class="{ [`col-sm-${formLeftSpan()}`]: isHorizontal, 'control-label': isHorizontal }">{{ label }}</label>
     <div :class="`col-sm-${formRightSpan()}`" v-if="isHorizontal">
-      <p class="form-control-static" v-if="this.static">{{ this.static }}</p>
+      <p class="form-control-static" v-if="typeof this.static !== 'undefined'">{{ this.static }}</p>
       <div class="form-control-static" v-if="$slots.static">
         <slot name="static"></slot>
       </div>
@@ -12,12 +12,18 @@
     </div>
     <template v-else>
       <template v-if="isInline">
-        <p class="form-control-static" v-if="this.static">{{ this.static }}</p>
+        <p class="form-control-static" v-if="typeof this.static !== 'undefined'">{{ this.static }}</p>
+        <div class="form-control-static" v-if="$slots.static">
+          <slot name="static"></slot>
+        </div>
         <slot></slot>
       </template>
       <template v-else>
         <div>
-          <p class="form-control-static" v-if="this.static">{{ this.static }}</p>
+          <p class="form-control-static" v-if="typeof this.static !== 'undefined'">{{ this.static }}</p>
+          <div class="form-control-static" v-if="$slots.static">
+            <slot name="static"></slot>
+          </div>
           <slot></slot>
         </div>
       </template>
@@ -56,7 +62,7 @@ export default {
     },
     static: {
       type: [String, Number],
-      default: ''
+      default: undefined
     }
   },
 
