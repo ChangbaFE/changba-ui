@@ -9,45 +9,6 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, WenQuanYi Micro Hei, Microsoft Yahei, sans-serif !important;
 }
 
-.cb-box {
-  .box-header {
-    .form-inline {
-      line-height: 40px;
-
-      .form-group {
-        margin-right: 10px;
-      }
-
-      select {
-        min-width: 100px;
-      }
-
-      & > .btn {
-        vertical-align: baseline;
-      }
-    }
-  }
-}
-
-.cb-table {
-  tr {
-    td {
-      &[colspan] {
-        text-align: center;
-      }
-    }
-  }
-
-  th {
-    white-space: nowrap;
-  }
-
-  & > tbody > tr > td,
-  & > thead > tr > th {
-    vertical-align: middle;
-  }
-}
-
 .cb-label {
   padding-top: 0.3em;
   font-weight: normal;
